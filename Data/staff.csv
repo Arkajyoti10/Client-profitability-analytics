@@ -1,0 +1,213 @@
+staff_id,staff_level,billing_rate_per_hr,cost_rate_per_hr
+S1001,Partner,450,180
+S1002,Partner,450,180
+S1003,Partner,450,180
+S1004,Partner,450,180
+S1005,Partner,450,180
+S1006,Partner,450,180
+S1007,Partner,450,180
+S1008,Partner,450,180
+S1009,Partner,450,180
+S1010,Partner,450,180
+S1011,Partner,450,180
+S1012,Partner,450,180
+S1013,Senior Manager,320,140
+S1014,Senior Manager,320,140
+S1015,Senior Manager,320,140
+S1016,Senior Manager,320,140
+S1017,Senior Manager,320,140
+S1018,Senior Manager,320,140
+S1019,Senior Manager,320,140
+S1020,Senior Manager,320,140
+S1021,Senior Manager,320,140
+S1022,Senior Manager,320,140
+S1023,Senior Manager,320,140
+S1024,Senior Manager,320,140
+S1025,Senior Manager,320,140
+S1026,Senior Manager,320,140
+S1027,Senior Manager,320,140
+S1028,Senior Manager,320,140
+S1029,Senior Manager,320,140
+S1030,Senior Manager,320,140
+S1031,Senior Manager,320,140
+S1032,Senior Manager,320,140
+S1033,Senior Manager,320,140
+S1034,Senior Manager,320,140
+S1035,Senior Manager,320,140
+S1036,Senior Manager,320,140
+S1037,Senior Manager,320,140
+S1038,Manager,250,110
+S1039,Manager,250,110
+S1040,Manager,250,110
+S1041,Manager,250,110
+S1042,Manager,250,110
+S1043,Manager,250,110
+S1044,Manager,250,110
+S1045,Manager,250,110
+S1046,Manager,250,110
+S1047,Manager,250,110
+S1048,Manager,250,110
+S1049,Manager,250,110
+S1050,Manager,250,110
+S1051,Manager,250,110
+S1052,Manager,250,110
+S1053,Manager,250,110
+S1054,Manager,250,110
+S1055,Manager,250,110
+S1056,Manager,250,110
+S1057,Manager,250,110
+S1058,Manager,250,110
+S1059,Manager,250,110
+S1060,Manager,250,110
+S1061,Manager,250,110
+S1062,Manager,250,110
+S1063,Manager,250,110
+S1064,Manager,250,110
+S1065,Manager,250,110
+S1066,Manager,250,110
+S1067,Manager,250,110
+S1068,Manager,250,110
+S1069,Manager,250,110
+S1070,Manager,250,110
+S1071,Manager,250,110
+S1072,Manager,250,110
+S1073,Manager,250,110
+S1074,Manager,250,110
+S1075,Manager,250,110
+S1076,Manager,250,110
+S1077,Manager,250,110
+S1078,Manager,250,110
+S1079,Manager,250,110
+S1080,Manager,250,110
+S1081,Manager,250,110
+S1082,Manager,250,110
+S1083,Senior Associate,180,85
+S1084,Senior Associate,180,85
+S1085,Senior Associate,180,85
+S1086,Senior Associate,180,85
+S1087,Senior Associate,180,85
+S1088,Senior Associate,180,85
+S1089,Senior Associate,180,85
+S1090,Senior Associate,180,85
+S1091,Senior Associate,180,85
+S1092,Senior Associate,180,85
+S1093,Senior Associate,180,85
+S1094,Senior Associate,180,85
+S1095,Senior Associate,180,85
+S1096,Senior Associate,180,85
+S1097,Senior Associate,180,85
+S1098,Senior Associate,180,85
+S1099,Senior Associate,180,85
+S1100,Senior Associate,180,85
+S1101,Senior Associate,180,85
+S1102,Senior Associate,180,85
+S1103,Senior Associate,180,85
+S1104,Senior Associate,180,85
+S1105,Senior Associate,180,85
+S1106,Senior Associate,180,85
+S1107,Senior Associate,180,85
+S1108,Senior Associate,180,85
+S1109,Senior Associate,180,85
+S1110,Senior Associate,180,85
+S1111,Senior Associate,180,85
+S1112,Senior Associate,180,85
+S1113,Senior Associate,180,85
+S1114,Senior Associate,180,85
+S1115,Senior Associate,180,85
+S1116,Senior Associate,180,85
+S1117,Senior Associate,180,85
+S1118,Senior Associate,180,85
+S1119,Senior Associate,180,85
+S1120,Senior Associate,180,85
+S1121,Senior Associate,180,85
+S1122,Senior Associate,180,85
+S1123,Senior Associate,180,85
+S1124,Senior Associate,180,85
+S1125,Senior Associate,180,85
+S1126,Senior Associate,180,85
+S1127,Senior Associate,180,85
+S1128,Senior Associate,180,85
+S1129,Senior Associate,180,85
+S1130,Senior Associate,180,85
+S1131,Senior Associate,180,85
+S1132,Senior Associate,180,85
+S1133,Senior Associate,180,85
+S1134,Senior Associate,180,85
+S1135,Senior Associate,180,85
+S1136,Senior Associate,180,85
+S1137,Senior Associate,180,85
+S1138,Senior Associate,180,85
+S1139,Senior Associate,180,85
+S1140,Senior Associate,180,85
+S1141,Senior Associate,180,85
+S1142,Senior Associate,180,85
+S1143,Associate,130,60
+S1144,Associate,130,60
+S1145,Associate,130,60
+S1146,Associate,130,60
+S1147,Associate,130,60
+S1148,Associate,130,60
+S1149,Associate,130,60
+S1150,Associate,130,60
+S1151,Associate,130,60
+S1152,Associate,130,60
+S1153,Associate,130,60
+S1154,Associate,130,60
+S1155,Associate,130,60
+S1156,Associate,130,60
+S1157,Associate,130,60
+S1158,Associate,130,60
+S1159,Associate,130,60
+S1160,Associate,130,60
+S1161,Associate,130,60
+S1162,Associate,130,60
+S1163,Associate,130,60
+S1164,Associate,130,60
+S1165,Associate,130,60
+S1166,Associate,130,60
+S1167,Associate,130,60
+S1168,Associate,130,60
+S1169,Associate,130,60
+S1170,Associate,130,60
+S1171,Associate,130,60
+S1172,Associate,130,60
+S1173,Associate,130,60
+S1174,Associate,130,60
+S1175,Associate,130,60
+S1176,Associate,130,60
+S1177,Associate,130,60
+S1178,Associate,130,60
+S1179,Associate,130,60
+S1180,Associate,130,60
+S1181,Associate,130,60
+S1182,Associate,130,60
+S1183,Associate,130,60
+S1184,Associate,130,60
+S1185,Associate,130,60
+S1186,Associate,130,60
+S1187,Associate,130,60
+S1188,Associate,130,60
+S1189,Associate,130,60
+S1190,Associate,130,60
+S1191,Associate,130,60
+S1192,Associate,130,60
+S1193,Associate,130,60
+S1194,Associate,130,60
+S1195,Associate,130,60
+S1196,Associate,130,60
+S1197,Associate,130,60
+S1198,Associate,130,60
+S1199,Associate,130,60
+S1200,Associate,130,60
+S1201,Associate,130,60
+S1202,Associate,130,60
+S1203,Associate,130,60
+S1204,Associate,130,60
+S1205,Associate,130,60
+S1206,Associate,130,60
+S1207,Associate,130,60
+S1208,Associate,130,60
+S1209,Associate,130,60
+S1210,Associate,130,60
+S1211,Associate,130,60
+S1212,Associate,130,60
