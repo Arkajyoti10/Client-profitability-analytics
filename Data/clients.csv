@@ -1,0 +1,41 @@
+client_id,client_name,industry,relationship_start_year,region,tenure_years
+C1000,Northfield Industries,Real Estate,2025,Midwest,1
+C1001,Cobalt Ltd.,Telecommunications,2015,West,11
+C1002,Union Partners,Nonprofit,2014,Midwest,12
+C1003,Northfield LLC,Consumer Goods,2020,Midwest,6
+C1004,Wellspring Enterprises,Technology,2020,Northeast,6
+C1005,Ironwood Ltd.,Retail,2021,Midwest,5
+C1006,Marlowe Partners,Technology,2018,Northeast,8
+C1007,Auric Inc.,Consumer Goods,2016,Northeast,10
+C1008,Marlowe Corp,Public Sector,2025,Midwest,1
+C1009,Kestrel Partners,Nonprofit,2021,West,5
+C1010,Northgate Inc.,Telecommunications,2019,West,7
+C1011,Larkspur Co.,Telecommunications,2024,West,2
+C1012,Northgate Solutions,Telecommunications,2016,West,10
+C1013,Orchard Group,Nonprofit,2014,West,12
+C1014,Bluepeak LLC,Manufacturing,2016,Midwest,10
+C1015,Kestrel Solutions,Nonprofit,2018,Midwest,8
+C1016,Granite Group,Real Estate,2016,South,10
+C1017,Windward Ltd.,Nonprofit,2014,West,12
+C1018,Fairmont Solutions,Consumer Goods,2018,Midwest,8
+C1019,Cedarbrook Corp,Manufacturing,2023,South,3
+C1020,Coastal Partners,Telecommunications,2020,West,6
+C1021,Ridgeline Partners,Consumer Goods,2020,Northeast,6
+C1022,Delta Enterprises,Consumer Goods,2024,South,2
+C1023,Ashford Industries,Insurance,2022,Midwest,4
+C1024,Granite Solutions,Healthcare,2023,Northeast,3
+C1025,Anchor Holdings,Manufacturing,2023,Northeast,3
+C1026,Delta LLC,Consumer Goods,2025,Northeast,1
+C1027,Northgate Industries,Healthcare,2016,South,10
+C1028,Fairmont Solutions (C1028),Healthcare,2020,Midwest,6
+C1029,Ridgeline Solutions,Manufacturing,2014,Northeast,12
+C1030,Union Corp,Insurance,2017,West,9
+C1031,Anchor Group,Technology,2017,Northeast,9
+C1032,Auric Holdings,Public Sector,2018,Northeast,8
+C1033,Wavecrest Industries,Real Estate,2020,South,6
+C1034,Northgate Co.,Public Sector,2020,South,6
+C1035,Summit Co.,Nonprofit,2024,Midwest,2
+C1036,Cobalt Holdings,Telecommunications,2017,West,9
+C1037,Palisade Solutions,Real Estate,2020,South,6
+C1038,Silverpeak LLC,Nonprofit,2024,Northeast,2
+C1039,Auric Inc. (C1039),Consumer Goods,2016,Midwest,10
