@@ -1,2 +1,4 @@
 # Client-profitability-analytics
-SQL + Python analysis of client-level profitability for a professional services firm - modeling fee realization, staffing cost, and margin drag to flag underprice engagements and prioritize high-value clients.
+This project analyzes client-level profitability for a professional services firm, going beyond top-line revenue to answer the question that actually drives business decisions: which clients are we truly making money on, once staffing cost, fee discounting, and overhead are factored in?
+
+Using a synthetic dataset modeled on real audit/advisory engagement economics — negotiated fixed fees, staff time entries, billing vs. cost rates, and quarterly overhead allocation — the project builds a full profitability pipeline: SQL to roll up granular time-entry data to the client level, Python to calculate margin and segment clients into a profitability matrix, and an Excel model as the final auditable deliverable. The goal is to identify underpriced engagements, quantify margin drag from heavy discounting, and recommend where the firm should reprice, scale back, or double down.
