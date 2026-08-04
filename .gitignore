@@ -1,0 +1,20 @@
+# OS/editor junk
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+venv/
+env/
+.venv/
+
+# Excel/temp files
+~$*.xlsx
+*.tmp
+
+# Jupyter
+.ipynb_checkpoints/
