@@ -17,3 +17,10 @@ Synthetic dataset built to mirror how a professional services firm (audit/adviso
 ## Approach
 1. SQL — join time_entries → engagements → clients, roll up to client-level revenue, cost, and margin
 
+## SQL Analysis
+Built in sql/client_profitability.sql as a layered rollup (time entries → engagements → clients → quarterly overhead), using CTEs to keep each aggregation at the correct grain and avoid double-counting from join fan-out.
+Key decisions:
+1. Percentages computed from summed dollar totals, never averaged directly
+2. LEFT JOIN throughout to preserve records with missing data, with explicit NULL checks
+3. MAX() used when pulling a per-client value into a query joined at a finer grain
+
