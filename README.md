@@ -20,12 +20,11 @@ Synthetic dataset built to mirror how a professional services firm (audit/adviso
 ## SQL Analysis
 Built in sql/client_profitability.sql as a layered rollup (time entries → engagements → clients → quarterly overhead), using CTEs to keep each aggregation at the correct grain and avoid double-counting from join fan-out.
 
-Key decisions:
+### Key decisions:
 1. Percentages computed from summed dollar totals, never averaged directly
 2. LEFT JOIN throughout to preserve records with missing data, with explicit NULL checks
 3. MAX() used when pulling a per-client value into a query joined at a finer grain
 
-Output:
-
+### Output:
 one row per client — engagement count, revenue, cost, gross margin %, net margin % (after overhead), and realization rate (negotiated fee vs. standard list-rate value) — exported to CSV for the Python segmentation step.
 
