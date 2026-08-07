@@ -15,5 +15,5 @@ Synthetic dataset built to mirror how a professional services firm (audit/adviso
 | data/overhead_allocation.csv | 320 | Quarterly overhead allocation allocated per client |
 
 ## Approach
-1. ### SQL — join time_entries → engagements → clients, roll up to client-level revenue, cost, and margin
+1. SQL — join time_entries → engagements → clients, roll up to client-level revenue, cost, and margin
 
