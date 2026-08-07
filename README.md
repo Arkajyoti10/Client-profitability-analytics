@@ -25,6 +25,7 @@ Key decisions:
 2. LEFT JOIN throughout to preserve records with missing data, with explicit NULL checks
 3. MAX() used when pulling a per-client value into a query joined at a finer grain
 
-Output: 
+Output:
+
 one row per client — engagement count, revenue, cost, gross margin %, net margin % (after overhead), and realization rate (negotiated fee vs. standard list-rate value) — exported to CSV for the Python segmentation step.
 
