@@ -6,3 +6,6 @@ Which clients and engagements are actually profitable once you account for the t
 
 ## Data
 Synthetic dataset built to mirror how a professional services firm (audit/advisory/consulting) tracks engagements. Data is randomly generated but structured to reflect realistic dynamics: fixed-fee engagements negotiated below or above standard list-rate value, variable staff realization (over/under budgeted hours), and quarterly overhead allocation.
+| File | Rows | Description |
+| --- | --- | --- |
+| data/clients.csv | 40 | Client roster-industry, region, relationship tenure |
