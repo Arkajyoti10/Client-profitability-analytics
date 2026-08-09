@@ -18,3 +18,11 @@ env/
 
 # Jupyter
 .ipynb_checkpoints/
+
+# Secrets
+.env
+DB_HOST=localhost
+DB_PORT=5433
+DB_NAME=Client_profitability_analysis
+DB_USER=postgres
+DB_PASSWORD=Namo89#Shiva*!
