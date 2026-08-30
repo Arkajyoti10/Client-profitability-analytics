@@ -1,6 +1,8 @@
 # Client-profitability-analytics
 SQL + Python pipeline that analyzes client-level profitability for a professional services firm-modeling fee realization, staffing cost, and margin drag to automatically flag underpriced or unprofitable clients and generate a partner-ready action memo.
+
 This project goes beyond top-line revenue to answer the question that actually drives business decisions: which clients are we truly making money on, once staffing cost, fee discounting, and overhead are factored in - and why?
+
 Using a synthetic dataset modeled on real audit/advisory engagement economics (negotiated fixed fees, staff time entries, billing vs. cost rates, quarterly overhead), the project builds a full automated pipeline: SQL rolls up granular time-entry data to the client level, Python segments and flags underperforming clients, an LLM synthesizes the findings into prose, and the result is assembled into a formatted Word document — no manual steps required after running one script.
 
 ## Business Question
