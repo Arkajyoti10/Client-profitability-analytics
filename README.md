@@ -21,9 +21,12 @@ Synthetic dataset built to mirror how a professional services firm (audit/adviso
 ## Pipeline
 extract.py ----> segment.py ----> flag.py ----> report.py
 
-1. ### SQL Analysis
+### 1. SQL analysis
 (sql/profits/profitability_analysis.sql)
 A layered CTE query joining time entries → engagements → clients → quarterly overhead, producing one row per client with revenue, cost, gross margin %, net margin % (after overhead), and realization rate (negotiated fee vs. standard list-rate value).
+
+### 2. extract.py
+Connects to PostgreSQL via SQLAlchemy and returns the SQL rollup as a DataFrame. Credentials load from a gitignored .env file; paths are resolved relative to the script itself, so it runs correctly regardless of working directory.
 
 ### Key decisions:
 1. Percentages computed from summed dollar totals, never averaged directly
