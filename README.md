@@ -21,8 +21,9 @@ Synthetic dataset built to mirror how a professional services firm (audit/adviso
 ## Pipeline
 extract.py ----> segment.py ----> flag.py ----> report.py
 
-## SQL Analysis
-Built in sql/client_profitability.sql as a layered rollup (time entries → engagements → clients → quarterly overhead), using CTEs to keep each aggregation at the correct grain and avoid double-counting from join fan-out.
+1. ### SQL Analysis
+(sql/profits/profitability_analysis.sql)
+A layered CTE query joining time entries → engagements → clients → quarterly overhead, producing one row per client with revenue, cost, gross margin %, net margin % (after overhead), and realization rate (negotiated fee vs. standard list-rate value).
 
 ### Key decisions:
 1. Percentages computed from summed dollar totals, never averaged directly
