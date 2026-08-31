@@ -19,7 +19,22 @@ Synthetic dataset built to mirror how a professional services firm (audit/adviso
 | data/overhead_allocation.csv | 320 | Quarterly overhead allocation allocated per client |
 
 ## Pipeline
-extract.py ----> segment.py ----> flag.py ----> report.py
+''' flowchart TD
+    A[(PostgreSQL Database)] -->|SQL rollup query| B["extract.py<br/>pulls client profitability<br/>data into a DataFrame"]
+    B --> C["segment.py<br/>classifies each client into a<br/>revenue/margin quadrant<br/>(median-based split)"]
+    C --> D["flag.py<br/>flags clients in the bottom<br/>quartile on BOTH net margin %<br/>AND realization rate"]
+    D --> E["report.py: classify_root_cause()<br/>splits flagged clients into<br/>Discount-driven vs Cost-driven"]
+    E --> F["report.py: generate_report()<br/>sends classified data to<br/>Groq LLM (Llama 3.1)"]
+    F --> G["LLM returns two prose sections:<br/>SUMMARY + RECOMMENDATION"]
+    E --> H["Client data tables built<br/>directly from the DataFrame<br/>(no numbers from the LLM)"]
+    G --> I["build_docx_report()<br/>assembles headings, tables,<br/>and prose into a Word doc"]
+    H --> I
+    I --> J[/"deliverables/profitability_report.docx"/]
+
+    style A fill:#2c3e50,color:#fff
+    style J fill:#27ae60,color:#fff
+    style F fill:#e67e22,color:#fff
+'''
 
 ### 1. SQL analysis
 (sql/profits/profitability_analysis.sql)
@@ -50,10 +65,10 @@ Of the clients flagged as underperforming, the large majority (7 of 8) are disco
 4. Each pipeline stage is a pure function — extract → segment → flag → report, each taking and returning a DataFrame (or dict), independently testable and importable, mirroring how the stages are actually orchestrated in report.py's __main__ block.
 
 ## Repo Structure
-Data/ raw source tables (CSV)
-SQL queries/ SQL rollup query
-python/ extract.py, segment.py, flag.py report.py
-deliverables/ generated Word report
+1. Data/ raw source tables (CSV)
+2. SQL queries/ SQL rollup query
+3. python/ extract.py, segment.py, flag.py report.py
+4. deliverables/ generated Word report
 
 ## Tools
 SQL (PostgreSQL), Python (pandas, NumPy, SQLAlchemy, python-docx), Groq API (openai/gpt-oss-120b)
