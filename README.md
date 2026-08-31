@@ -43,6 +43,12 @@ The automation layer:
 ## Key Finding:
 Of the clients flagged as underperforming, the large majority (7 of 8) are discount-driven — margins are actually healthy, but fees were negotiated below the standard value of work delivered, dragging down realization. Only one client is cost-driven, where the fee is fair but staffing cost is eroding margin. This points to a firm-wide pricing/discounting issue rather than a staffing problem: the recommended first move is a repricing review across the discount-driven group, not a staffing audit.
 
+## Design Decisions
+1. Data-driven thresholds throughout — segmentation and flagging cutoffs are computed from the dataset (medians, quartiles) rather than hardcoded, so they hold up if the underlying data changes.
+2. Root-cause split uses a fixed, meaningful boundary (100% realization) rather than another quantile — because "paying at or above standard value" is a real business threshold, not a relative one.
+3. The LLM only writes prose, never numbers — the report's tables are built directly from the DataFrame; the model is prompted to return two structured text sections only, keeping every figure in the final document verifiably accurate.
+4. Each pipeline stage is a pure function — extract → segment → flag → report, each taking and returning a DataFrame (or dict), independently testable and importable, mirroring how the stages are actually orchestrated in report.py's __main__ block.
+
 ### Output:
 one row per client — engagement count, revenue, cost, gross margin %, net margin % (after overhead), and realization rate (negotiated fee vs. standard list-rate value) — exported to CSV for the Python segmentation step.
 
