@@ -19,6 +19,7 @@ Synthetic dataset built to mirror how a professional services firm (audit/adviso
 | data/overhead_allocation.csv | 320 | Quarterly overhead allocation allocated per client |
 
 ## Pipeline
+'''mermaid
 flowchart TD
     A[(PostgreSQL Database)] -->|SQL rollup query| B["extract.py<br/>pulls client profitability<br/>data into a DataFrame"]
     B --> C["segment.py<br/>classifies each client into a<br/>revenue/margin quadrant<br/>(median-based split)"]
@@ -34,7 +35,7 @@ flowchart TD
     style A fill:#2c3e50,color:#fff
     style J fill:#27ae60,color:#fff
     style F fill:#e67e22,color:#fff
-
+'''
 
 ### 1. SQL analysis
 (sql/profits/profitability_analysis.sql)
