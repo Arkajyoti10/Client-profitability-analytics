@@ -58,6 +58,7 @@ The automation layer:
   
 ## Key Finding:
 Of the clients flagged as underperforming, the large majority (7 of 8) are discount-driven — margins are actually healthy, but fees were negotiated below the standard value of work delivered, dragging down realization. Only one client is cost-driven, where the fee is fair but staffing cost is eroding margin. This points to a firm-wide pricing/discounting issue rather than a staffing problem: the recommended first move is a repricing review across the discount-driven group, not a staffing audit.
+
 <img width="707" height="673" alt="Screenshot 2026-09-01 022213" src="https://github.com/user-attachments/assets/7fed01e5-6b73-4272-9c60-1d04abdd8142" />
 
 ## Design Decisions
