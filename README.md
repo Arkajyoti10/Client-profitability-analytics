@@ -49,6 +49,12 @@ Of the clients flagged as underperforming, the large majority (7 of 8) are disco
 3. The LLM only writes prose, never numbers — the report's tables are built directly from the DataFrame; the model is prompted to return two structured text sections only, keeping every figure in the final document verifiably accurate.
 4. Each pipeline stage is a pure function — extract → segment → flag → report, each taking and returning a DataFrame (or dict), independently testable and importable, mirroring how the stages are actually orchestrated in report.py's __main__ block.
 
-### Output:
-one row per client — engagement count, revenue, cost, gross margin %, net margin % (after overhead), and realization rate (negotiated fee vs. standard list-rate value) — exported to CSV for the Python segmentation step.
+## Repo Structure
+Data/ raw source tables (CSV)
+SQL queries/ SQL rollup query
+python/ extract.py, segment.py, flag.py report.py
+deliverables/ generated Word report
+
+## Tools
+SQL (PostgreSQL), Python (pandas, NumPy, SQLAlchemy, python-docx), Groq API (openai/gpt-oss-120b)
 
