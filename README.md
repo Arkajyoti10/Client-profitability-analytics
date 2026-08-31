@@ -65,6 +65,15 @@ Of the clients flagged as underperforming, the large majority (7 of 8) are disco
 3. The LLM only writes prose, never numbers — the report's tables are built directly from the DataFrame; the model is prompted to return two structured text sections only, keeping every figure in the final document verifiably accurate.
 4. Each pipeline stage is a pure function — extract → segment → flag → report, each taking and returning a DataFrame (or dict), independently testable and importable, mirroring how the stages are actually orchestrated in report.py's __main__ block.
 
+## Setup
+python -m venv venv
+source venv/Scripts/activate      # Windows (Git Bash)
+# venv\Scripts\activate           # Windows (Command Prompt)
+# source venv/bin/activate        # Mac/Linux
+
+pip install -r requirements.txt
+cp .env.example .env              # then fill in your DB credentials + GROQ_API_KEY
+
 ## Repo Structure
 1. Data/ raw source tables (CSV)
 2. SQL queries/ SQL rollup query
