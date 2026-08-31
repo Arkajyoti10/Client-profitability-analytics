@@ -66,6 +66,8 @@ Of the clients flagged as underperforming, the large majority (7 of 8) are disco
 4. Each pipeline stage is a pure function — extract → segment → flag → report, each taking and returning a DataFrame (or dict), independently testable and importable, mirroring how the stages are actually orchestrated in report.py's __main__ block.
 
 ## Setup
+
+```bash
 python -m venv venv
 source venv/Scripts/activate      # Windows (Git Bash)
 # venv\Scripts\activate           # Windows (Command Prompt)
@@ -73,13 +75,20 @@ source venv/Scripts/activate      # Windows (Git Bash)
 
 pip install -r requirements.txt
 cp .env.example .env              # then fill in your DB credentials + GROQ_API_KEY
+```
+### Run pipeline
+```bash
+python python/report.py
+```
+This generates deliverables/profitability_report.docx from scratch - no mannual steps needed
 
 ## Repo Structure
-1. Data/ raw source tables (CSV)
-2. SQL queries/ SQL rollup query
-3. python/ extract.py, segment.py, flag.py report.py
-4. deliverables/ generated Word report
-
+```bash
+Data/ raw source tables (CSV)
+SQL queries/ SQL rollup query
+python/ extract.py, segment.py, flag.py report.py
+deliverables/ generated Word report
+```
 ## Tools
 SQL (PostgreSQL), Python (pandas, NumPy, SQLAlchemy, python-docx), Groq API (openai/gpt-oss-120b)
 
